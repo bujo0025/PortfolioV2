@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development | Davin A. Bujold</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<header class="hero">
+  <h1>Web Development</h1>
+  <p class="tagline">Front-End · Interactive UI · Clean Code</p>
+  <a href="index.html" class="cta">Back Home</a>
+</header>
+
+<section class="reveal">
+  <h2>Web Development Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="images/dwello.png" alt="Website project">
+      <h3>Dwello Real Estate </h3>
+      <p>Dwello is a Real Estate website concept that I made in class. It showcases house listings and locations, as well as an agents page that introduces viewers to Dwello's finest workers.</p>
+      <a href="https://bujo0025.github.io/DwelloRealEstate/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <img src="images/game.png" alt="Website project">
+      <h3>Blacksmith Mini Game</h3>
+      <p>Blacksmith is a mini webpage game that allows users to buy, sell, and craft items to sell for gold. It actively tracks how much resources you have so you know how many items you're able to craft, and how much you're selling those crafted items for.</p>
+      <a href="https://bujo0025.github.io/Blacksmith-Game/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <img src="images/stadium.png" alt="Website project">
+      <h3>Stadium viewer</h3>
+      <p>I made this Stadium Viewer in honour of the Blue Jays 2025 World Series run. This site allows you to pick from both the AL and NL, and view the stadiums of all the teams within each league. Clicking the photo brings up a high resolution image of each stadium. </p>
+      <a href="https://bujo0025.github.io/Stadium-Viewer/" target="_blank">Visit Site</a>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="reveal">
+  <div class="grid">
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="Website project">
+      <h3>Dwello Real Estate </h3>
+      <p>HTML, CSS, JavaScript — responsive and animated.</p>
+      <a href="https://bujo0025.github.io/DwelloRealEstate/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="Website project">
+      <h3>Blacksmith Mini Game</h3>
+      <p>API-driven UI with dynamic content.</p>
+      <a href="https://bujo0025.github.io/Blacksmith-Game/" target="_blank">Visit Site</a>
+    </div>
+  </div>
+</section> -->
+
+ <!-- FOOTER -->
+ <footer id="footer">
+  <p>© 2026 Davin A. Bujold</p>
+  <div class="social-icons">
+    <a href="https://www.youtube.com/@DavinsVideography" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/davin-bujold-80739b34a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</footer>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-img" id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
