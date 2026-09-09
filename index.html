@@ -3,70 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Davin A. Bujold | Web Developer & Graphic Designer</title>
+  <title>Davin A. Bujold | Web Developer</title>
+  <meta name="description" content="Web developer portfolio showcasing responsive, interactive front-end projects.">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Star Background -->
-  <canvas id="stars"></canvas>
-
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Davin A. Bujold</h1>
-    <p class="tagline">
-      Web Developer · Graphic Designer · Digital Storyteller
-    </p>
-    <a href="#work" class="cta">View My Work</a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Davin A. Bujold</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="contact.html" class="cta">Get In Touch</a>
+    </nav>
   </header>
 
-  <!-- WORK -->
-  <section id="work" class="reveal">
-    <h2>view My Work</h2>
-
-    <div class="grid">
-
-      <!-- WEBSITE PROJECT -->
-      <div class="card">
-        <img src="images/ss2.png" alt="Website project thumbnail">
-        <h3>Graphic Design</h3>
-        <p>
-            A collection of visual work exploring layout, typography, and illustration, with a strong influence from sci-fi and cinematic design. This section highlights posters, branding concepts, and creative experiments that showcase both technical skill and artistic voice.
-        </p>
-        <a href="graphic-design.html">View Designs</a>
-      </div>
-
-      <!-- VIDEO PROJECT -->
-      <div class="card">
-        <img src="images/Screenshot 2026-01-15 at 2.30.18 PM.png" alt="Video project thumbnail">
-        <h3>Web Development</h3>
-        <p>
-            A selection of responsive, interactive web projects built with modern front-end technologies. These pieces focus on clean code, thoughtful user experience, and engaging animations, demonstrating a balance between design sensibility and technical execution.
-        </p>
-        <a href="web-development.html"">View Sites</a>
-      </div>
-
-      <!-- DESIGN PROJECT -->
-      <div class="card">
-        <img src="images/video.png" alt="Design project thumbnail">
-        <h3>videography Channel</h3>
-        <p>
-            A showcase of video projects focused on storytelling, pacing, and visual composition. This section features edited short films and creative videos that demonstrate an eye for narrative, mood, and detail across different formats.
-        </p>
-        <a href="https://www.youtube.com/@DavinsVideography" target="_blank" rel="noopener noreferrer">View Videos</a>
-      </div>
-
+  <!-- HERO -->
+  <section class="hero">
+    <span class="eyebrow">Web Developer</span>
+    <h1>Davin A. Bujold</h1>
+    <p class="tagline">
+      I build clean, responsive, and reliable web experiences — from concept through deployment.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="cta filled">View My Work</a>
+      <a href="contact.html" class="cta">Get In Touch</a>
     </div>
   </section>
 
+  <!-- WORK -->
+  <section id="work" class="reveal">
+    <span class="eyebrow">Selected Work</span>
+    <h2>Web Development Projects</h2>
+    <p class="section-intro">
+      A selection of responsive, interactive web projects built with modern front-end technologies —
+      each focused on clean code, thoughtful user experience, and practical problem-solving.
+    </p>
+
+    <div class="grid" id="work-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
   <section id="about" class="reveal">
-    <h2>About Me</h2>
+    <span class="eyebrow">About</span>
+    <h2>A little about me</h2>
 
     <div class="about-inner">
       <img
@@ -75,51 +62,55 @@
         alt="Portrait of Davin A. Bujold"
       >
 
-      <p class="about-text">
-        I’m a web developer and graphic designer with a strong interest in computers, technology, and digital creativity. I enjoy working at the intersection of design and code, where I can take ideas from concept to execution and build experiences that are both visually engaging and technically sound.
-        <br>
-        <br>
-        My interest in technology has been shaped by a lifelong appreciation for science fiction, especially Star Wars, which inspires my love for immersive worlds, storytelling, and thoughtful design. Alongside that, working with Lego has influenced how I approach problem-solving and structure: breaking complex ideas into smaller parts and assembling them into something cohesive, functional, and creative. A little fun fact, I personally own the 6th biggest Lego set every made, the UCS Millennium Falcon. 
-        <br>
-        <br>
-        As an aspiring designer and developer, I’m eager to gain as much hands-on experience as possible and continue learning in a professional environment. I’m motivated, detail-oriented, and excited to contribute creatively while developing my skills in both front-end development and design. I’m looking for opportunities where I can grow, collaborate, and help bring compelling digital ideas to life.
-      </p>
+      <div class="about-text">
+        <p>
+          I'm a web developer with a strong interest in building software that's both technically sound and easy to use. I enjoy working across the full process — from planning and structuring a project to writing the front-end code that brings it to life.
+        </p>
+        <p>
+          I'm detail-oriented, motivated to keep learning, and looking for opportunities where I can grow as a developer, contribute to a team, and take on real-world problems.
+        </p>
+
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>Git</span>
+          <span>UI/UX</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT CTA -->
   <section id="contact" class="reveal">
-    <h2>Contact</h2>
-    <p>
-      Interested in working together or want to learn more?
-      Let’s connect.
-    </p>
-    <a href="contact.html" class="cta">Get In Touch</a>
+    <div id="contact-cta">
+      <h2>Let's work together</h2>
+      <p>
+        Interested in working together or want to learn more about my experience? I'd love to connect.
+      </p>
+      <a href="contact.html" class="cta filled">Get In Touch</a>
+    </div>
   </section>
 
   <!-- FOOTER -->
-<footer id="footer">
+  <footer id="footer">
     <p>© 2026 Davin A. Bujold</p>
     <div class="social-icons">
-      <a href="https://www.youtube.com/@DavinsVideography" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
+      <a href="https://github.com/bujo0025" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
       </a>
       <a href="https://www.linkedin.com/in/davin-bujold-80739b34a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
+      <a href="mailto:davin.bujold@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
     </div>
   </footer>
-  
-  
 
   <!-- JS -->
+  <script src="projects.js"></script>
   <script src="script.js"></script>
-
-  <!-- IMAGE MODAL -->
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-img" id="modalImg">
-  </div>
-  
 </body>
 </html>
