@@ -4,30 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Davin A. Bujold</title>
+  <meta name="theme-color" content="#08090b">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- SCROLL FX -->
+  <div class="saber" aria-hidden="true">
+    <span class="saber-track"></span>
+    <span class="saber-blade"></span>
+    <span class="saber-hilt"></span>
+  </div>
+
   <!-- HEADER -->
   <header class="site-header">
-    <a href="index.html" class="logo">Davin A. Bujold</a>
+    <a href="index.html" class="logo"><span class="dot" aria-hidden="true"></span>Davin A. Bujold</a>
     <nav>
-      <a href="index.html#work">Work</a>
-      <a href="index.html#about">About</a>
-      <a href="contact.html" class="cta">Get In Touch</a>
+      <div class="nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </div>
+      <a href="contact.html" class="cta magnetic">Get In Touch</a>
     </nav>
   </header>
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="reveal">
-    <span class="eyebrow">Contact</span>
-    <h2>Get in Touch</h2>
+    <div class="section-head">
+      <span class="eyebrow">01 / Contact <span class="blink" aria-hidden="true"></span></span>
+      <h2 data-split>Get in Touch</h2>
+    </div>
     <p>
       Fill out the form below and I'll respond as soon as possible.
       Whether it's an opportunity, a question, or a project idea, I'm glad to hear from you.
@@ -67,7 +84,7 @@
         <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
       </div>
 
-      <button type="submit" class="cta filled">Send Message</button>
+      <button type="submit" class="cta filled magnetic">Send Message</button>
       <p class="form-note">This opens a pre-filled email in your default mail app.</p>
     </form>
   </section>

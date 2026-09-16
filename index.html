@@ -5,66 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Davin A. Bujold | Web Developer</title>
   <meta name="description" content="Web developer portfolio showcasing responsive, interactive front-end projects.">
+  <meta name="theme-color" content="#08090b">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- SCROLL FX -->
+  <div class="saber" aria-hidden="true">
+    <span class="saber-track"></span>
+    <span class="saber-blade"></span>
+    <span class="saber-hilt"></span>
+  </div>
+
   <!-- HEADER -->
   <header class="site-header">
-    <a href="index.html" class="logo">Davin A. Bujold</a>
+    <a href="index.html" class="logo"><span class="dot" aria-hidden="true"></span>Davin A. Bujold</a>
     <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="contact.html" class="cta">Get In Touch</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </div>
+      <a href="contact.html" class="cta magnetic">Get In Touch</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <span class="eyebrow">Web Developer</span>
-    <h1>Davin A. Bujold</h1>
-    <p class="tagline">
-      I build clean, responsive, and reliable web experiences — from concept through deployment.
-    </p>
-    <div class="hero-actions">
-      <a href="#work" class="cta filled">View My Work</a>
-      <a href="contact.html" class="cta">Get In Touch</a>
+    <div class="hero-inner load-in">
+      <span class="eyebrow">// Web Developer <span class="blink" aria-hidden="true"></span></span>
+      <h1 data-split>Davin A. Bujold</h1>
+      <p class="tagline" data-split>
+        I build clean, responsive, and reliable web experiences, from concept through deployment.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="cta filled magnetic">View My Work</a>
+        <a href="contact.html" class="cta magnetic">Get In Touch</a>
+      </div>
     </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
   </section>
 
   <!-- WORK -->
   <section id="work" class="reveal">
-    <span class="eyebrow">Selected Work</span>
-    <h2>Web Development Projects</h2>
+    <div class="section-head">
+      <span class="eyebrow">01 / Selected Work</span>
+      <h2 data-split>Web Development Projects</h2>
+    </div>
     <p class="section-intro">
-      A selection of responsive, interactive web projects built with modern front-end technologies —
-      each focused on clean code, thoughtful user experience, and practical problem-solving.
+      A closer look at the projects I've built, from a NASA-powered capstone to browser games and
+      full concept sites, each focused on clean code, thoughtful user experience, and practical problem-solving.
     </p>
 
-    <div class="grid" id="work-grid"></div>
+    <div class="work-list" id="work-grid"></div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="reveal">
-    <span class="eyebrow">About</span>
-    <h2>A little about me</h2>
+    <div class="section-head">
+      <span class="eyebrow">02 / About</span>
+      <h2 data-split>A little about me</h2>
+    </div>
 
     <div class="about-inner">
-      <img
-        class="about-photo"
-        src="images/IMG_8120.JPEG"
-        alt="Portrait of Davin A. Bujold"
-      >
+      <div class="about-photo-wrap">
+        <img
+          class="about-photo"
+          src="images/about.jpg"
+          alt="Davin A. Bujold playing piano"
+        >
+      </div>
 
       <div class="about-text">
         <p>
-          I'm a web developer with a strong interest in building software that's both technically sound and easy to use. I enjoy working across the full process — from planning and structuring a project to writing the front-end code that brings it to life.
+          I'm a web developer with a strong interest in building software that's both technically sound and easy to use. I enjoy working across the full process, from planning and structuring a project to writing the front-end code that brings it to life.
+        </p>
+        <p>
+          On the back-end side, I also work with PHP and have experience building and customizing WordPress themes, going beyond front-end polish to ship sites that clients can actually manage themselves.
         </p>
         <p>
           I'm detail-oriented, motivated to keep learning, and looking for opportunities where I can grow as a developer, contribute to a team, and take on real-world problems.
@@ -74,6 +101,8 @@
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
+          <span>PHP</span>
+          <span>WordPress</span>
           <span>Responsive Design</span>
           <span>Git</span>
           <span>UI/UX</span>
@@ -85,11 +114,12 @@
   <!-- CONTACT CTA -->
   <section id="contact" class="reveal">
     <div id="contact-cta">
+      <span class="eyebrow">03 / Contact</span>
       <h2>Let's work together</h2>
       <p>
         Interested in working together or want to learn more about my experience? I'd love to connect.
       </p>
-      <a href="contact.html" class="cta filled">Get In Touch</a>
+      <a href="contact.html" class="cta filled magnetic">Get In Touch</a>
     </div>
   </section>
 
